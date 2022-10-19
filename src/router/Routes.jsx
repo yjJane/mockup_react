@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "../router/Home";
-import MainEntrance from '../router/MainEntrance';
-import Fdc from "../router/FDC";
-import Pavilion from "../router/Pavilion";
-import Exhivitor from "../router/Exhivitor";
+// import Home from '../pages/Home';
+import MainEntrance from '../pages/MainEntrance';
+import Fdc from '../pages/FDC';
+import Pavilion from '../pages/Pavilion';
+import Exhivitor from '../pages/Exhivitor';
 
 
 const AppRouter = () => {
   return(
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<MainEntrance />}></Route>
       <Route path="/MainEntrance" element= {<MainEntrance />}></Route>
       <Route path="/FDC" element= {<Fdc />}></Route>
       <Route path="/Pavilion" element= {<Pavilion />}></Route>

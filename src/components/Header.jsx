@@ -1,19 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "../assets/Header.module.css";
+import "../assets/Header.scss";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <header>
-      <Link to="/"><img src="../../public/brand-logo.png" alt="" /></Link>
-      <nav>
-        <ul>
-          <li><Link to="/MainEntrance">MainEntrance</Link></li>
-          <li><Link to="/FDC">2021FDC</Link></li>
-          <li><Link to="/Pavilion">Pavilion</Link></li>
-          <li><Link to="/Exhivitor">Exhibitor</Link></li>
-        </ul>
-      </nav>
+    <header className="header">
+      <Link to="/" className="logo"><img src="../../public/brand-logo.png" alt="" /></Link>
+      <Navigation></Navigation>
     </header>
   )
 }

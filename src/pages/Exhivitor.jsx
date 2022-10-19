@@ -1,9 +1,9 @@
 import React from "react";
-import "../assets/Page.module.css";
+import "../assets/Page.scss";
 
 const Exhivitor = () => {
   return(
-    <div>
+    <div className="vr-player">
       <span>Exhivitor page</span>
     </div>
   )

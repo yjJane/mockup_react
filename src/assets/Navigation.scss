@@ -1,0 +1,23 @@
+$font-size: 16px;
+$color: #fff;
+
+.gnb_wrap {
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%); height: 100%;
+  & .gnb_list {
+    display: flex; height: 100%;
+  }
+  & .gnb_item {
+    display: flex; align-items: center; height: 100%; padding:0 20px;
+    a {
+      font-size: $font-size; color: $color;
+      &:hover {
+        filter: drop-shadow(rgba(255, 255, 255, 0.6) 0px 0px 12px);
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+// nav ul {display: flex; height: 100%;}
+// nav ul li {display: flex; align-items: center; height: 100%; padding:0 20px;}
