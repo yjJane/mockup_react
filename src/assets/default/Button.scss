@@ -1,0 +1,14 @@
+$button-bg: #009eb4;
+$button-gradient-bg: #015aaa;
+
+.btn{
+  display: inline-block; padding: 12px 24px; background: $button-bg; background: -webkit-gradient(linear, left top, right top, color-stop(1%, #{$button-bg}), to(#{$button-gradient-bg})); background: linear-gradient(to right, #{$button-bg} 1%, #{$button-gradient-bg} 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$btn_color1', endColorstr='$btn_color2',GradientType=1 ); border-radius: 52px; color: #fff; -webkit-box-shadow: 0 1px 10px 0 rgb(0 0 0 / 30%); box-shadow: 0 1px 10px 0 rgb(0 0 0 / 30%); font-size: 0; vertical-align: middle; outline: 0;
+}
+
+.btn_wrap{
+  margin-top:24px; text-align: right;
+  span {
+    display: inline-block; font-size: 16px; font-weight: 700; letter-spacing: -.9px; line-height: 1.7;
+  }
+}
+

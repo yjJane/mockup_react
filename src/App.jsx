@@ -1,6 +1,7 @@
 import React from 'react'
 import "./assets/default.module.css";
-import Header from './components/Header';
+import Header from './components/template/Header';
+import Modal from './components/template/Modal';
 import AppRouter from './router/Routes';
 
 
@@ -9,7 +10,10 @@ const App = () => {
     <>
       <Header></Header>
       <div className='container hall'>
-        <AppRouter></AppRouter>
+        <div className="contents">
+          <Modal></Modal>
+          <AppRouter></AppRouter>
+        </div>
       </div>
     </>
   )
