@@ -1,0 +1,61 @@
+.main{
+  height: 100%; padding-top: 0!important;
+  
+  .afterPlay{
+    margin-top: 1%;
+
+    .btn{
+      text-shadow: none;
+    }
+
+    .skip {
+      display: inline-block; font-size: 16px; font-weight: 700; letter-spacing: -.9px; line-height: 1.7;
+    }
+  }
+}
+.contents{
+  position: relative; width: 100%; height: 100%;
+  
+  .main_video{
+    width: 100% !important; height: 100% !important; -o-object-fit: cover; object-fit: cover; background: url(../assets/video/intro_thumbnail.jpg) no-repeat 50% 50%; background-size: cover;
+  }
+}
+.main-title_box{
+  position: fixed; left: 40px; bottom: 6%; z-index: 20; width: 100%; color: #fff; text-shadow: 1px 1px 4px rgb(0 0 0 / 30%);
+
+  .main_title {
+    font-weight: 500;
+    
+    img{
+      height: 200px; margin-bottom: 12px;
+    }
+  }
+}
+.main_brand{
+  position: fixed; top: 24px; left: 16px;
+
+  img{
+    height: 100px;
+  }
+}
+.chrome_download {
+  position: fixed; bottom: 1%; left: 40px; z-index: 1; margin: 10px auto; font-size: 0; text-align: right;
+
+  .msg, .btn_chrome{
+    display: inline-block; color: #fff; vertical-align: middle;
+  }
+
+  .msg {
+    font-size: 16px; letter-spacing: -.8px;
+  }
+
+  .btn_chrome {
+    margin-left: 10px; padding: 4px 8px; border: 1px solid #fff; border-radius: 5px; font-size: 12px; letter-spacing: -.8px; -webkit-transition: .3s; transition: .3s;
+  }
+}
+
+.miceview_logo{
+  position: fixed; bottom: 3%; right: 40px; z-index: 1; height: 40px;
+
+  img{height: 100%;}
+}

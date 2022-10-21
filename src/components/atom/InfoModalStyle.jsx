@@ -9,7 +9,7 @@ const InfoModalStyle = () => {
         <li className="modal_help-control-item control-info_item">
           <span className="item_wrap">
             <span className="img_wrap">
-              <img src="../../assets/icon/help_info.png" alt="" />
+              <img src="icon/help_info.png" alt="" />
             </span>
             <span className="img_desc">Check company information.</span>
           </span>
@@ -17,7 +17,7 @@ const InfoModalStyle = () => {
         <li className="modal_help-control-item control-info_item">
           <span className="item_wrap">
             <span className="img_wrap">
-              <img src="../../assets/icon/help_image.png" alt="" />
+              <img src="icon/help_image.png" alt="" />
             </span>
             <span className="img_desc">View related images.</span>
           </span>
@@ -25,7 +25,7 @@ const InfoModalStyle = () => {
         <li className="modal_help-control-item control-info_item">
           <span className="item_wrap">
             <span className="img_wrap">
-              <img src="../../assets/icon/help_video.png" alt="" />
+              <img src="icon/help_video.png" alt="" />
             </span>
             <span className="img_desc">Watch related videos.</span>
           </span>
@@ -33,7 +33,7 @@ const InfoModalStyle = () => {
         <li className="modal_help-control-item control-info_item">
           <span className="item_wrap">
             <span className="img_wrap">
-              <img src="../../assets/icon/help_pdf.png" alt="" />
+              <img src="icon/help_pdf.png" alt="" />
             </span>
             <span className="img_desc">Read the related brochure.</span>
           </span>
@@ -41,7 +41,7 @@ const InfoModalStyle = () => {
         <li className="modal_help-control-item control-info_item">
           <span className="item_wrap">
             <span className="img_wrap">
-              <img src="../../assets/icon/help_chat.png" alt="" />
+              <img src="icon/help_chat.png" alt="" />
             </span>
             <span className="img_desc">Contact the company.</span>
           </span>
