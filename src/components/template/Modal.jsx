@@ -1,35 +1,57 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import "../../assets/ModalPopup.scss";
 import NextModalBtn from "../atom/NextModalBtn";
 import CloseModalBtn from "../atom/CloseModalBtn";
+import InfoModalStyle from "../atom/InfoModalStyle";
 
 const Modal = () => {
-  const modalInner01 = useRef(null);
-  const modalInner02 = useRef(null);
+  const [changePopup, setChangePopup] = useState(true);
+  const [closeModal, setCloseModal] = useState(true);
+  // const modalInner01 = useRef(null);
+  // const modalInner02 = useRef(null);
   const popUpFunc = (childProp) => {
-    if(childProp){
-      modalInner01.style.display = 'none';
-    }
+    setChangePopup(childProp);
+  }
+  const modalFunc = (closeProp) => {
+    setCloseModal(closeProp);
   }
 
   return (
-    <div className="modal">
-      <div className="modal_inner modal_inner1" ref={modalInner01}>
-        <div className="modal_inner_text">
-          <p>Hello. Welcome to a virtual exhibition hall of 2021 Foreing Company Day.</p>
+    <>
+      { closeModal ? (
+
+        <div className="modal">
+            
+          { changePopup ? (
+            <div className="modal_inner modal_inner1">
+              <div className="modal_inner_text">
+                <p>Hello. Welcome to a virtual exhibition hall of 2021 Foreing Company Day.</p>
+              </div>
+              <NextModalBtn popUpFunc={popUpFunc}></NextModalBtn>
+            </div>
+            ) : (
+            <div className="modal_inner modal_inner2 modal_inner_help">
+              <div className="modal_help-center">
+                <InfoModalStyle></InfoModalStyle>
+                <CloseModalBtn closeModal={modalFunc}></CloseModalBtn>
+              </div>
+            </div>
+            )
+        }
+
+          <div className="modal_bg"></div>
+
         </div>
-        <NextModalBtn popUpFunc={popUpFunc}></NextModalBtn>
-      </div>
-      <div className="modal_inner modal_inner2" ref={modalInner02}>
-        <div className="modal_inner_text">
-          <p>Hello. Welcome to a virtual exhibition hall of 2021 Foreing Company Day.</p>
-        </div>
-        <CloseModalBtn></CloseModalBtn>
-      </div>
-      {/* Modal Background */}
-      <div className="modal_bg"></div>
-    </div>
+
+      ) : (
+        <></>
+      )
+      
     
+      }
+
+
+    </>
   )
 }
 

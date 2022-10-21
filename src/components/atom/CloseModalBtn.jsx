@@ -1,16 +1,20 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../../assets/default/Button.scss";
 
-const CloseModalBtn = () => {
-  // const [closeModal, setCloseModal] = useState(false);
-  // setCloseModal(() => {
-  //   closeModal(true)
-  // });
+const CloseModalBtn = (props) => {
+  const [closeModal, setCloseModal] = useState(true);
+  const clickCloseBtn = () => {
+    setCloseModal(false)
+  }
+
+  useEffect(() => {
+    props.closeModal(closeModal);
+  }, [closeModal]);
 
   return (
-    <div className="btn_wrap">
-      <button className="btn btn_modal_next" type="button">
-        <span>Next</span>
+    <div className="btn_wrap btn_modal_close">
+      <button className="btn" type="button" onClick={clickCloseBtn}>
+        <span>Start</span>
       </button>
     </div> 
   );

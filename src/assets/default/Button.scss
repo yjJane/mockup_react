@@ -12,3 +12,20 @@ $button-gradient-bg: #015aaa;
   }
 }
 
+.btn_modal_close.btn_wrap{
+  
+}
+
+.btn_modal_close{
+  &.btn_wrap{
+    display: inline-block; margin-top: 0; vertical-align: middle;
+  }
+
+  .btn{
+    padding: 12px 72px; background: #8200FF; opacity: 1; -webkit-transition: opacity .4s; transition: opacity .4s;
+
+    &:hover{
+      opacity: 0.75;
+    }
+  }
+}
